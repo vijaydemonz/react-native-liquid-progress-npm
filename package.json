@@ -1,0 +1,33 @@
+{
+  "name": "react-native-liquid-progress",
+  "version": "1.0.2",
+  "description": "liquid progress circular bar with cool liquid animations saves to save lot of time and also make your project look cooler. its fully customizable and light weight module. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "progressbar",
+    "custom",
+    "Progress",
+    "react-native-progress-bar",
+    "circular",
+    "progessbar",
+    "liquid",
+    "aniamtion"
+  ],
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "react-native-svg": "^12.1.0"
+  },
+  "author": "vijay kumar taduri",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijaydemonz/react-native-liquid-progress-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vijaydemonz/react-native-liquid-progress-npm/issues"
+  },
+  "homepage": "https://github.com/vijaydemonz/react-native-liquid-progress-npm#readme"
+}
