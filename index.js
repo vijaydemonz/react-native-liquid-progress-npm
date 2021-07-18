@@ -99,7 +99,7 @@ const LiquidProgress = ({
                 {
                   translateY: fillAnim.interpolate({
                     inputRange: [0, 1],
-                    outputRange: [px(120), px(-155)],
+                    outputRange: [SIZE / 2, -SIZE / 2],
                   }),
                 },
               ],
@@ -110,7 +110,6 @@ const LiquidProgress = ({
               height={px(SIZE)}
               style={{
                 left: (px(-100) * SIZE) / 280,
-
                 transform: [
                   {
                     translateX: progress.interpolate({
