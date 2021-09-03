@@ -206,7 +206,7 @@ LiquidProgress.propTypes = {
   children: PropTypes.element,
   fill: PropTypes.number,
   frontWaveColor: PropTypes.string,
-  size: PropTypes.Number,
+  size: PropTypes.number,
 };
 
 export default LiquidProgress;
