@@ -1,5 +1,5 @@
-import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
+import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
   Text,
@@ -19,6 +19,7 @@ export default function App() {
         backWaveColor={"skyblue"}
         fill={value}
         size={290}
+        customMask={<View style={{ backgroundColor: "red", width: 290, height: 290 }}></View>}
       >
         <Animated.View style={styles.row}>
           <Text style={styles.text}>{(value * 100).toFixed(2)}%</Text>

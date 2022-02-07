@@ -10,6 +10,7 @@ const LiquidProgress = ({
   size,
   fill,
   children,
+  customMask
 }) => {
   const SIZE = size;
   const AnimatedSvg = Animated.createAnimatedComponent(Svg);
@@ -76,15 +77,17 @@ const LiquidProgress = ({
       <ProgressBar />
       <MaskedView
         maskElement={
-          <View
-            style={{
-              backgroundColor: "red",
-              width: px(SIZE),
-              height: px(SIZE),
-              left: (px(320) * SIZE) / 280,
-              borderRadius: px(SIZE / 2),
-            }}
-          />
+          <View style={{ left: (px(320) * SIZE) / 280, }} >{
+            customMask ? customMask :
+              <View
+                style={{
+                  backgroundColor: "red",
+                  width: px(SIZE),
+                  height: px(SIZE),
+                  borderRadius: px(SIZE / 2),
+                }}
+              />}
+          </View>
         }
       >
         <View

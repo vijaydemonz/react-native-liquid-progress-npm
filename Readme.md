@@ -24,8 +24,8 @@ react native component Liquid Circular Progress for react native developers.This
 ## Usage
 
 ```javascript
-import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
+import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
   Text,
@@ -33,7 +33,7 @@ import {
   Animated,
   TouchableOpacity,
 } from "react-native";
-import LiquidProgress from "react-native-liquid-progress";
+import LiquidProgress from "./index";
 
 export default function App() {
   const [value, setValue] = useState(0);
@@ -45,6 +45,7 @@ export default function App() {
         backWaveColor={"skyblue"}
         fill={value}
         size={290}
+        customMask={<View style={{ backgroundColor: "red", width: 290, height: 290 }}></View>}
       >
         <Animated.View style={styles.row}>
           <Text style={styles.text}>{(value * 100).toFixed(2)}%</Text>
@@ -114,6 +115,8 @@ const styles = StyleSheet.create({
 | frontWaveColor  | wave color of front wave                                                        | blue        | hexcolor      | no           |
 | backWaveColor   | wave color of back wave                                                         | skyblue     | hexcolor      | no           |
 | `children`      | to render what ever u need inside (refer usage section for clear understanging) | null        | JSX component | no           |
+| customMask            | shape of loading container with custom shapes (can use svg view is supported) | React Component                                       | Circle         | React Component |
+
 
 ## Support
 
