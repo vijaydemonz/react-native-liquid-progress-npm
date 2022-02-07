@@ -1,6 +1,6 @@
 {
   "name": "react-native-liquid-progress",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "liquid progress circular bar with cool liquid animations saves to save lot of time and also make your project look cooler. its fully customizable and light weight module. ",
   "main": "index.js",
   "scripts": {

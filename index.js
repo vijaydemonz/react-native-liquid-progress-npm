@@ -10,7 +10,7 @@ const LiquidProgress = ({
   size,
   fill,
   children,
-  customMask
+  customMask = null
 }) => {
   const SIZE = size;
   const AnimatedSvg = Animated.createAnimatedComponent(Svg);
