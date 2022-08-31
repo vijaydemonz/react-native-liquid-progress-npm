@@ -19,7 +19,7 @@ react native component Liquid Circular Progress for react native developers.This
 
 ## Import
 
-`import { LiquidProgress } from react-native-liquid-progress`
+`import LiquidProgress from "react-native-liquid-progress"`
 
 ## Usage
 
@@ -33,7 +33,7 @@ import {
   Animated,
   TouchableOpacity,
 } from "react-native";
-import LiquidProgress from "./index";
+import LiquidProgress from "react-native-liquid-progress"
 
 export default function App() {
   const [value, setValue] = useState(0);
